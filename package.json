@@ -1,0 +1,27 @@
+{
+  "name": "nativescript-notification",
+  "version": "0.0.1",
+  "description": "nativescript plugin to handle fcm notification",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suminksudhi/nativescript-notification.git"
+  },
+  "keywords": [
+    "notification",
+    "fcm",
+    "nativescript"
+  ],
+  "author": "suminksudhi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/suminksudhi/nativescript-notification/issues"
+  },
+  "homepage": "https://github.com/suminksudhi/nativescript-notification#readme",
+  "devDependencies": {
+    "typescript": "^3.0.3"
+  }
+}
