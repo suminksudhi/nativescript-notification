@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
+    "plugin.link": "npm link && cd ../demo && npm link @drifters/nativescript-notification && npm install @drifters/nativescript-notification ../src -S && cd ../src",
+    "plugin.ng.link": "npm link && cd ../demoAngular && npm link @drifters/nativescript-notification && npm install @drifters/nativescript-notification ../src -S && cd ../src",
     "demo.android": "npm i && npm run tsc && cd ../demo && tns run android --syncAllFiles",
     "demo.ng.android": "npm i && npm run tsc && cd ../demoAngular && tns run android --syncAllFiles"
   },
