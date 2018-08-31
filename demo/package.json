@@ -13,7 +13,7 @@
     "license": "SEE LICENSE IN <your-license-filename>",
     "repository": "<fill-your-repository-here>",
     "dependencies": {
-        "@drifters/nativescript-notification": "file:../src",
+        "@drifters/nativescript-notification": "../src",
         "nativescript-theme-core": "~1.0.4",
         "tns-core-modules": "~4.2.0"
     },
