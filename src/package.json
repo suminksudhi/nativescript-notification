@@ -1,10 +1,12 @@
 {
-  "name": "nativescript-notification",
+  "name": "@drifters/nativescript-notification",
   "version": "0.0.1",
   "description": "nativescript plugin to handle fcm notification",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "demo.android": "npm i && npm run tsc && cd ../demo && tns run android --syncAllFiles",
+    "demo.ng.android": "npm i && npm run tsc && cd ../demoAngular && tns run android --syncAllFiles"
   },
   "repository": {
     "type": "git",
@@ -22,12 +24,13 @@
   },
   "homepage": "https://github.com/suminksudhi/nativescript-notification#readme",
   "devDependencies": {
+    "tns-platform-declarations": "^4.2.0",
     "typescript": "^3.0.3"
   },
   "nativescript": {
-    "id": "org.nativescript.nativescriptnotification",
+    "id": "com.drifters.notification",
     "tns-android": {
-      "version": "4.3.0-2018-08-02-03"
+      "version": "4.3.0-2018-08-29-01"
     }
   },
   "dependencies": {
