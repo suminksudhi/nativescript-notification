@@ -9,11 +9,17 @@
         }
     },
     "main": "app.js",
-    "description": "NativeScript Application",
-    "license": "SEE LICENSE IN <your-license-filename>",
+    "description": "NativeScript Demp App",
+    "author": "suminksudhi",
+    "license": "MIT",
     "repository": "<fill-your-repository-here>",
+    "script":{
+        "build.plugin": "cd ../src && npm run build",
+        "ci.tslint": "npm i && tslint --config ../tslint.json 'app/**/*.ts' --exclude '**/node_modules/**'",
+        "ci.android.build": "cd ../src && npm run build && cd ../demo && tns build android",
+        "ci.ios.build": "cd ../src && npm run build.iosOnly && cd ../demo && tns build ios"
+    },
     "dependencies": {
-        "@drifters/nativescript-notification": "../src",
         "nativescript-theme-core": "~1.0.4",
         "tns-core-modules": "~4.2.0"
     },
